@@ -1,6 +1,8 @@
 import { useState, useRef, useEffect } from 'react';
 import { Bot, Send, User, Mic, MicOff, Volume2, VolumeX } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
+import { findResponse } from '../lib/ecoData';
+
 
 const SYSTEM_PROMPT = `You are an eco-assistant for Eco Setu, a climate action app for Bengaluru, India. 
 Help users with climate tips, carbon footprint reduction, local environmental issues (water scarcity, air quality, metro usage, rainwater harvesting), and eco actions.
@@ -72,26 +74,81 @@ export default function AIAssistant() {
       .filter(m => m.id !== 1)
       .map(m => ({ role: m.sender === 'user' ? 'user' : 'assistant', content: m.text }));
 
+    const apiKey = import.meta.env.VITE_ANTHROPIC_API_KEY;
+    
+    // --- Weather Query Logic (Real-time, no key required) ---
+    if (textToSend.toLowerCase().includes("rain") || textToSend.toLowerCase().includes("weather")) {
+      try {
+        const weatherRes = await fetch('https://api.open-meteo.com/v1/forecast?latitude=12.9716&longitude=77.5946&daily=rain_sum,temperature_2m_max&timezone=auto');
+        const weatherData = await weatherRes.json();
+        const rainSum = weatherData.daily.rain_sum[0];
+        const tempMax = weatherData.daily.temperature_2m_max[0];
+        
+        let weatherResponse = `The current forecast for Bengaluru shows a high of ${tempMax}°C. `;
+        if (rainSum > 0) {
+          weatherResponse += `Yes, there is about ${rainSum}mm of rain expected today. Don't forget your umbrella!`;
+        } else {
+          weatherResponse += `It looks like it won't rain today. It's a good day for outdoor eco-activities!`;
+        }
+        
+        setMessages(prev => [...prev, { id: Date.now() + 1, sender: 'bot', text: weatherResponse }]);
+        speakText(weatherResponse);
+        setIsLoading(false);
+        return;
+      } catch (err) {
+        console.error('Weather API Error:', err);
+      }
+    }
+
+    // --- Autonomous Expert System fallback ---
+    if (!apiKey || apiKey === 'your_anthropic_api_key_here') {
+      await new Promise(resolve => setTimeout(resolve, 800)); // Brief natural delay
+      const botResponse = findResponse(textToSend);
+      setMessages(prev => [...prev, { id: Date.now() + 1, sender: 'bot', text: botResponse }]);
+      speakText(botResponse);
+      setIsLoading(false);
+      return;
+    }
+
     try {
-      const response = await fetch('https://api.anthropic.com/v1/messages', {
+      // Use proxy in development to bypass CORS, direct in production
+      const apiUrl = import.meta.env.DEV ? '/api/anthropic/messages' : 'https://api.anthropic.com/v1/messages';
+      
+      const response = await fetch(apiUrl, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 
+          'Content-Type': 'application/json',
+          'x-api-key': apiKey,
+          'anthropic-version': '2023-06-01'
+        },
         body: JSON.stringify({
-          model: 'claude-sonnet-4-20250514',
+          model: 'claude-3-5-sonnet-20240620',
           max_tokens: 1000,
           system: SYSTEM_PROMPT,
           messages: [...history, { role: 'user', content: textToSend }],
         }),
       });
 
+      if (!response.ok) {
+        // Fallback to Expert System if API fails (e.g. invalid key)
+        const botResponse = findResponse(textToSend);
+        setMessages(prev => [...prev, { id: Date.now() + 1, sender: 'bot', text: botResponse }]);
+        speakText(botResponse);
+        setIsLoading(false);
+        return;
+      }
+
       const data = await response.json();
-      const botResponse = data.content?.[0]?.text || "Sorry, I couldn't get a response. Please try again.";
+      const botResponse = data.content?.[0]?.text || findResponse(textToSend);
 
       setMessages(prev => [...prev, { id: Date.now() + 1, sender: 'bot', text: botResponse }]);
       speakText(botResponse);
     } catch (err) {
-      console.error(err);
-      setMessages(prev => [...prev, { id: Date.now() + 1, sender: 'bot', text: "Network error. Please check your connection." }]);
+      console.error('AI Error:', err);
+      // Final fallback to Expert System
+      const botResponse = findResponse(textToSend);
+      setMessages(prev => [...prev, { id: Date.now() + 1, sender: 'bot', text: botResponse }]);
+      speakText(botResponse);
     } finally {
       setIsLoading(false);
     }
