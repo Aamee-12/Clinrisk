@@ -1,0 +1,243 @@
+﻿
+> build
+> vite build
+
+node.exe : (node:10932) [DEP0205] DeprecationWarning: `module.register()` is 
+deprecated. Use `module.registerHooks()` instead.
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ((node:10932) [D...oks()` instead. 
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Warning: Route file "C:/Users/DELL/Desktop/proj/clinrisk-insight-main/src/route
+s/lib/sample-data.ts" does not export a Route. This file will not be included 
+in the route tree.
+
+If this file is not intended to be a route, you can exclude it using one of 
+these options:
+  1. Rename the file to "C:\Users\DELL\Desktop\proj\clinrisk-insight-main\src\r
+outes\lib\-sample-data.ts" (prefix with "-")
+  2. Use 'routeFileIgnorePattern' in your config to match this file
+
+Current configuration:
+  routeFileIgnorePrefix: "-"
+  routeFileIgnorePattern: undefined
+Warning: Route file 
+"C:/Users/DELL/Desktop/proj/clinrisk-insight-main/src/routes/lib/utils.ts" 
+does not export a Route. This file will not be included in the route tree.
+
+If this file is not intended to be a route, you can exclude it using one of 
+these options:
+  1. Rename the file to 
+"C:\Users\DELL\Desktop\proj\clinrisk-insight-main\src\routes\lib\-utils.ts" 
+(prefix with "-")
+  2. Use 'routeFileIgnorePattern' in your config to match this file
+
+Current configuration:
+  routeFileIgnorePrefix: "-"
+  routeFileIgnorePattern: undefined
+Warning: Route file "C:/Users/DELL/Desktop/proj/clinrisk-insight-main/src/route
+s/lib/risk-models.ts" does not export a Route. This file will not be included 
+in the route tree.
+
+If this file is not intended to be a route, you can exclude it using one of 
+these options:
+  1. Rename the file to "C:\Users\DELL\Desktop\proj\clinrisk-insight-main\src\r
+outes\lib\-risk-models.ts" (prefix with "-")
+  2. Use 'routeFileIgnorePattern' in your config to match this file
+
+Current configuration:
+  routeFileIgnorePrefix: "-"
+  routeFileIgnorePattern: undefined
+Warning: Route file 
+"C:/Users/DELL/Desktop/proj/clinrisk-insight-main/src/routes/lib/utils.ts" 
+does not export a Route. This file will not be included in the route tree.
+
+If this file is not intended to be a route, you can exclude it using one of 
+these options:
+  1. Rename the file to 
+"C:\Users\DELL\Desktop\proj\clinrisk-insight-main\src\routes\lib\-utils.ts" 
+(prefix with "-")
+  2. Use 'routeFileIgnorePattern' in your config to match this file
+
+Current configuration:
+  routeFileIgnorePrefix: "-"
+  routeFileIgnorePattern: undefined
+Warning: Route file "C:/Users/DELL/Desktop/proj/clinrisk-insight-main/src/route
+s/lib/risk-models.ts" does not export a Route. This file will not be included 
+in the route tree.
+
+If this file is not intended to be a route, you can exclude it using one of 
+these options:
+  1. Rename the file to "C:\Users\DELL\Desktop\proj\clinrisk-insight-main\src\r
+outes\lib\-risk-models.ts" (prefix with "-")
+  2. Use 'routeFileIgnorePattern' in your config to match this file
+
+Current configuration:
+  routeFileIgnorePrefix: "-"
+  routeFileIgnorePattern: undefined
+Warning: Route file "C:/Users/DELL/Desktop/proj/clinrisk-insight-main/src/route
+s/lib/sample-data.ts" does not export a Route. This file will not be included 
+in the route tree.
+
+If this file is not intended to be a route, you can exclude it using one of 
+these options:
+  1. Rename the file to "C:\Users\DELL\Desktop\proj\clinrisk-insight-main\src\r
+outes\lib\-sample-data.ts" (prefix with "-")
+  2. Use 'routeFileIgnorePattern' in your config to match this file
+
+Current configuration:
+  routeFileIgnorePrefix: "-"
+  routeFileIgnorePattern: undefined
+Warning: Route file "C:/Users/DELL/Desktop/proj/clinrisk-insight-main/src/route
+s/lib/risk-models.ts" does not export a Route. This file will not be included 
+in the route tree.
+
+If this file is not intended to be a route, you can exclude it using one of 
+these options:
+  1. Rename the file to "C:\Users\DELL\Desktop\proj\clinrisk-insight-main\src\r
+outes\lib\-risk-models.ts" (prefix with "-")
+  2. Use 'routeFileIgnorePattern' in your config to match this file
+
+Current configuration:
+  routeFileIgnorePrefix: "-"
+  routeFileIgnorePattern: undefined
+Warning: Route file "C:/Users/DELL/Desktop/proj/clinrisk-insight-main/src/route
+s/lib/sample-data.ts" does not export a Route. This file will not be included 
+in the route tree.
+
+If this file is not intended to be a route, you can exclude it using one of 
+these options:
+  1. Rename the file to "C:\Users\DELL\Desktop\proj\clinrisk-insight-main\src\r
+outes\lib\-sample-data.ts" (prefix with "-")
+  2. Use 'routeFileIgnorePattern' in your config to match this file
+
+Current configuration:
+  routeFileIgnorePrefix: "-"
+  routeFileIgnorePattern: undefined
+Warning: Route file 
+"C:/Users/DELL/Desktop/proj/clinrisk-insight-main/src/routes/lib/utils.ts" 
+does not export a Route. This file will not be included in the route tree.
+
+If this file is not intended to be a route, you can exclude it using one of 
+these options:
+  1. Rename the file to 
+"C:\Users\DELL\Desktop\proj\clinrisk-insight-main\src\routes\lib\-utils.ts" 
+(prefix with "-")
+  2. Use 'routeFileIgnorePattern' in your config to match this file
+
+Current configuration:
+  routeFileIgnorePrefix: "-"
+  routeFileIgnorePattern: undefined
+[36mvite v7.3.2 [32mbuilding client environment for production...[36m[39m
+transforming...
+Found 2 warnings while optimizing generated CSS:
+
+Issue #1:
+[2mΓöé   initial-value: 0;[22m
+[2mΓöé }[22m
+[2mΓöé[22m @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta
++Sans:ital,wght@0,300..800;1,300..800&display=swap");
+[2mΓöå[22m        [33m[2m^--[22m @import rules must precede all rules 
+aside from @charset and @layer statements[39m
+[2mΓöå[22m
+[2mΓöé @import 
+url("https://cdn.jsdelivr.net/npm/cal-sans@1.0.1/index.min.css");[22m
+[2mΓöé :root {[22m
+
+Issue #2:
+[2mΓöé }[22m
+[2mΓöé @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans
+:ital,wght@0,300..800;1,300..800&display=swap");[22m
+[2mΓöé[22m @import 
+url("https://cdn.jsdelivr.net/npm/cal-sans@1.0.1/index.min.css");
+[2mΓöå[22m        [33m[2m^--[22m @import rules must precede all rules 
+aside from @charset and @layer statements[39m
+[2mΓöå[22m
+[2mΓöé :root {[22m
+[2mΓöé   --radius: 0.875rem;[22m
+
+[32mΓ£ô[39m 2538 modules transformed.
+rendering chunks...
+computing gzip size...
+[2mdist/client/[22m[32m.assetsignore                   [39m[1m[2m  0.02 kB[22m[1m[22m
+[2mdist/client/[22m[35massets/styles-Bg95q8J1.css      [39m[1m[2m102.32 kB[22m[1m[22m[2m Γöé gzip:  15.99 kB[22m
+[2mdist/client/[22m[36massets/search-DBs87RMK.js       [39m[1m[2m  0.18 kB[22m[1m[22m[2m Γöé gzip:   0.17 kB[22m
+[2mdist/client/[22m[36massets/lightbulb-NvDbcY11.js    [39m[1m[2m  0.29 kB[22m[1m[22m[2m Γöé gzip:   0.23 kB[22m
+[2mdist/client/[22m[36massets/file-text-ChUqmyLg.js    [39m[1m[2m  0.38 kB[22m[1m[22m[2m Γöé gzip:   0.25 kB[22m
+[2mdist/client/[22m[36massets/input-CQNjZpuU.js        [39m[1m[2m  0.59 kB[22m[1m[22m[2m Γöé gzip:   0.37 kB[22m
+[2mdist/client/[22m[36massets/settings-flD8YkI9.js     [39m[1m[2m  0.77 kB[22m[1m[22m[2m Γöé gzip:   0.43 kB[22m
+[2mdist/client/[22m[36massets/ui-bits-CzAt-Ih6.js      [39m[1m[2m  1.86 kB[22m[1m[22m[2m Γöé gzip:   0.84 kB[22m
+[2mdist/client/[22m[36massets/reports-CD03-ucc.js      [39m[1m[2m  2.44 kB[22m[1m[22m[2m Γöé gzip:   0.84 kB[22m
+[2mdist/client/[22m[36massets/sample-data-DNz_ikvd.js  [39m[1m[2m  3.57 kB[22m[1m[22m[2m Γöé gzip:   1.79 kB[22m
+[2mdist/client/[22m[36massets/patients-G8B__X_q.js     [39m[1m[2m 11.35 kB[22m[1m[22m[2m Γöé gzip:   3.22 kB[22m
+[2mdist/client/[22m[36massets/analysis-UjrhavzQ.js     [39m[1m[2m 38.87 kB[22m[1m[22m[2m Γöé gzip:  11.77 kB[22m
+[2mdist/client/[22m[36massets/AppShell-CL1WRN1r.js     [39m[1m[2m 69.75 kB[22m[1m[22m[2m Γöé gzip:  21.28 kB[22m
+[2mdist/client/[22m[36massets/index-BbZdfp0t.js        [39m[1m[2m330.40 kB[22m[1m[22m[2m Γöé gzip: 105.89 kB[22m
+[2mdist/client/[22m[36massets/index-DM593WN9.js        [39m[1m[33m938.82 kB[39m[22m[2m Γöé gzip: 261.69 kB[22m
+[33m
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: 
+https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via 
+build.chunkSizeWarningLimit.[39m
+[32mΓ£ô built in 21.92s[39m
+[36mvite v7.3.2 [32mbuilding ssr environment for production...[36m[39m
+transforming...
+Found 2 warnings while optimizing generated CSS:
+
+Issue #1:
+[2mΓöé   initial-value: 0;[22m
+[2mΓöé }[22m
+[2mΓöé[22m @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta
++Sans:ital,wght@0,300..800;1,300..800&display=swap");
+[2mΓöå[22m        [33m[2m^--[22m @import rules must precede all rules 
+aside from @charset and @layer statements[39m
+[2mΓöå[22m
+[2mΓöé @import 
+url("https://cdn.jsdelivr.net/npm/cal-sans@1.0.1/index.min.css");[22m
+[2mΓöé :root {[22m
+
+Issue #2:
+[2mΓöé }[22m
+[2mΓöé @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans
+:ital,wght@0,300..800;1,300..800&display=swap");[22m
+[2mΓöé[22m @import 
+url("https://cdn.jsdelivr.net/npm/cal-sans@1.0.1/index.min.css");
+[2mΓöå[22m        [33m[2m^--[22m @import rules must precede all rules 
+aside from @charset and @layer statements[39m
+[2mΓöå[22m
+[2mΓöé :root {[22m
+[2mΓöé   --radius: 0.875rem;[22m
+
+[32mΓ£ô[39m 2590 modules transformed.
+rendering chunks...
+[2mdist/server/[22m[32mwrangler.json                                          [39m[1m[2m    1.28 kB[22m[1m[22m
+[2mdist/server/[22m[32m.vite/manifest.json                                    [39m[1m[2m    6.14 kB[22m[1m[22m
+[2mdist/server/[22m[35massets/styles-Bg95q8J1.css                             [39m[1m[2m  102.32 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/start-HYkvq4Ni.js                               [39m[1m[2m    0.06 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/__23tanstack-start-plugin-adapters-Cwee5PKy.js  [39m[1m[2m    0.14 kB[22m[1m[22m
+[2mdist/server/[22m[36mindex.js                                               [39m[1m[2m    0.21 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/search-CGbM85of.js                              [39m[1m[2m    0.28 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/lightbulb-GTHdOTBC.js                           [39m[1m[2m    0.43 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/file-down-C0MWWE_R.js                           [39m[1m[2m    0.51 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/file-text-D-HBKvjy.js                           [39m[1m[2m    0.55 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/input-C6zoyts1.js                               [39m[1m[2m    0.84 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/settings-DyYqLTSt.js                            [39m[1m[2m    1.39 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/patients-D0xpSOat.js                            [39m[1m[2m    1.49 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/_tanstack-start-manifest_v-CZVH26QY.js          [39m[1m[2m    1.87 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/ui-bits-B-xb7KVa.js                             [39m[1m[2m    3.13 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/reports-DeAr2zFP.js                             [39m[1m[2m    4.44 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/sample-data-B5OefatJ.js                         [39m[1m[2m    4.53 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/patients-9UMNXEyp.js                            [39m[1m[2m   20.10 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/analysis-BtftjbPg.js                            [39m[1m[2m   80.22 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/db.server-C7qyueI-.js                           [39m[1m[2m   82.31 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/router-DOgOleui.js                              [39m[1m[2m  112.64 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/AppShell-Rl4dcZB0.js                            [39m[1m[2m  171.53 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/worker-entry-DcsSZPU5.js                        [39m[1m[33m  739.82 kB[39m[22m
+[2mdist/server/[22m[36massets/index-C_JaBP3i.js                               [39m[1m[33m1,615.85 kB[39m[22m
+[32mΓ£ô built in 20.63s[39m

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <display-name>Hospital Management</display-name>
+
+    <!-- Patient Page Servlet -->
+    <servlet>
+        <servlet-name>PatientPageServlet</servlet-name>
+        <servlet-class>com.clinic.servlet.PatientPageServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PatientPageServlet</servlet-name>
+        <url-pattern>/patients</url-pattern>
+    </servlet-mapping>
+
+    <!-- Patient Action Servlet -->
+    <servlet>
+        <servlet-name>PatientActionServlet</servlet-name>
+        <servlet-class>com.clinic.servlet.PatientActionServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PatientActionServlet</servlet-name>
+        <url-pattern>/PatientActionServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Logout Servlet -->
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.clinic.servlet.LogoutServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <!-- Welcome File -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
