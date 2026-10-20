@@ -27,3 +27,18 @@ ClinRisk is a clinical decision support and risk analysis system designed to org
 
 ### Development Status
 This project is under development. Features and setup instructions may change as development progresses.
+
+## Features and Technology Stack
+
+### Features
+- **Patient Management:** Add and maintain patient records.
+- **Patient Data Storage:** Store patient information in a MySQL database.
+- **Clinical Risk Analysis:** Project module for analyzing patient information to support clinical decision-making.
+- **Web Interface:** Access the project through a browser-based interface.
+
+### Technologies Used
+- **Frontend:** React, TypeScript, JavaScript, HTML, and CSS
+- **Backend:** Java
+- **Database:** MySQL
+- **Development Tools:** Visual Studio Code, MySQL Workbench, Git, and GitHub
+
