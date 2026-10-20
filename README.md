@@ -14,3 +14,16 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+## About ClinRisk
+
+ClinRisk is a clinical decision support and risk analysis system designed to organize patient information and present health-related insights through a dashboard.
+
+### Project Goals
+- Organize patient records.
+- Provide a clear dashboard for patient information.
+- Support the presentation of health-related risk insights.
+
+### Development Status
+This project is under development. Features and setup instructions may change as development progresses.
